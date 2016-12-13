@@ -1,5 +1,14 @@
 #!/bin/bash
-for x in ubuntu-base ubuntu-apache; do
+
+images=(
+  ubuntu-base
+  ubuntu-apache
+  ubuntu-dokuwiki
+  ubuntu-rbenv
+)
+
+for x in "${images[@]}"
+do
   cd $x
   docker build -t $x .
   cd ..
