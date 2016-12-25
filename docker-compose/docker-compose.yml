@@ -6,3 +6,5 @@ services:
     mem_limit: 250000000
     image: httpd
     cpu_shares: 100
+    ports:
+      - "80:80"
