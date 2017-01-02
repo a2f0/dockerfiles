@@ -3,4 +3,4 @@
 #docker run -p 80:80 -d ubuntu-dokuwiki
 #docker-compose up
 source init-env.sh
-docker run -t -i -e S3FS_USER=$S3FS_USER -e S3FS_PASS=$S3FS_PASS ubuntu-apache
+docker run --cap-add SYS_ADMIN --device /dev/fuse -t -i -e AWSACCESSKEYID=$S3FS_USER -e AWSSECRETACCESSKEY=$S3FS_PASS ubuntu-dokuwiki
