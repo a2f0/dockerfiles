@@ -36,7 +36,11 @@ Detach an attached container
 
     cntrl+p, cntrl+q
 
-# AWS ECS Docker Compose
+# AWS ECS / Docker Compose
+
+Delete the cluster and associated resources
+
+    ecs-cli down --force
 
 Create and start an ECS task definiion from a compose file
 
