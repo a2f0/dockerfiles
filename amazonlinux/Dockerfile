@@ -6,3 +6,5 @@ RUN yum update -y
 RUN yum install net-tools -y
 RUN yum install procps -y
 RUN yum install openssh-server -y
+RUN chkconfig sshd on
+RUN service sshd start
