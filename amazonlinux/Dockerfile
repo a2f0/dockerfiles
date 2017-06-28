@@ -8,6 +8,7 @@ RUN yum install openssh-clients -y
 RUN yum install openssh-server -y
 RUN yum install procps -y
 RUN yum install sudo  -y
+RUN yum install which  -y
 RUN chkconfig sshd on
 RUN service sshd start
 RUN mkdir -p /home/ec2-user/.ssh/
