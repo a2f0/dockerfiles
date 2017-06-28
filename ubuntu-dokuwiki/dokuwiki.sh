@@ -10,4 +10,5 @@ set -e
 #exec /usr/sbin/apache2ctl -D FOREGROUND
 
 mkdir -p /mnt/dansullivan-io-backup && s3fs -d dansullivan-io-backup /mnt/dansullivan-io-backup/
+apachectl start
 bash
