@@ -16,6 +16,14 @@ Forward a port
 
     docker run -p 80:80 -it ubuntu-base
 
+List the images
+
+    docker images
+
+Remove an image
+
+    docker rmi amazon-linux
+
 List the running containers
 
     docker ps
