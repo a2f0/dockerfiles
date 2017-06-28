@@ -20,6 +20,10 @@ List the images
 
     docker images
 
+Build an image from a Dockerfile
+
+    docker build -t amazonlinux .
+
 Remove an image
 
     docker rmi amazon-linux
