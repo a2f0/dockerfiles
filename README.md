@@ -40,6 +40,10 @@ Attach to a detached container
 
     docker attach 3a96f0f31f
 
+Start a stopped container
+
+    docker start 7b95e112cf27
+
 Detach an attached container
 
     cntrl+p, cntrl+q
