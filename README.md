@@ -44,6 +44,11 @@ Start a stopped container
 
     docker start 7b95e112cf27
 
+Stop and remove all containers
+
+    docker stop $(docker ps -a -q)
+    docker rm $(docker ps -a -q)
+
 Detach an attached container
 
     cntrl+p, cntrl+q
