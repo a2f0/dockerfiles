@@ -12,9 +12,10 @@ Start a detached container with an environment variable set
 
     docker run -d -t -i -e ENVIRONMENT_VARIABLE='staging' ubuntu-base
 
-Forward a port
+Forward a port (or multiple)
 
     docker run -p 80:80 -it ubuntu-base
+    docker run -p 14322:22 -p 14323:23 -it amazonlinux
 
 List the images
 
