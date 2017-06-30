@@ -17,4 +17,4 @@ RUN chmod 700 /home/ec2-user/.ssh
 COPY id_rsa.pub /home/ec2-user/.ssh/authorized_keys
 RUN chown -R ec2-user:ec2-user /home/ec2-user
 COPY cloud-init /etc/sudoers.d/
-ENTRYPOINT service sshd restart && bash
+ENTRYPOINT service sshd start && bash
