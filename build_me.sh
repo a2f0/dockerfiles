@@ -6,6 +6,7 @@ images=(
   ubuntu-dokuwiki
   ubuntu-rbenv
   amazonlinux
+  raspbian-aker
 )
 
 for x in "${images[@]}"
