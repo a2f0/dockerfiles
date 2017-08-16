@@ -12,6 +12,10 @@ Start a detached container with an environment variable set
 
     docker run -d -t -i -e ENVIRONMENT_VARIABLE='staging' ubuntu-base
 
+Drop to a shell on an already running docker container
+
+    docker exec -it b87d583f31e2 bash
+
 Forward a port (or multiple)
 
     docker run -p 80:80 -it ubuntu-base
