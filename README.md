@@ -18,6 +18,10 @@ List volumes not referenced by any container
 
     docker volume ls --filter dangling=true
 
+Remove dangling volumes
+
+    docker volume rm $(docker volume ls -f dangling=true -q)
+
 Delete a docker volume
 
     docker volume rm 243ea6da32b7c752ebabd9980735bc68ec3fa11c88847031c674a0d6aa922d25
