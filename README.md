@@ -8,6 +8,26 @@ Run `./build_me.sh` to build the images.
 
 # Docker Notes
 
+## Working with Volumes
+
+List the volumes
+
+    docker volume list
+
+List volumes not referenced by any container
+
+    docker volume ls --filter dangling=true
+
+Delete a docker volume
+
+    docker volume rm 243ea6da32b7c752ebabd9980735bc68ec3fa11c88847031c674a0d6aa922d25
+
+Show what containers are using a volume
+
+    docker ps --filter=volume=ccsbackend_postgres_data_dev
+
+##  Misc
+
 Start a detached container with an environment variable set
 
     docker run -d -t -i -e ENVIRONMENT_VARIABLE='staging' ubuntu-base
