@@ -1,0 +1,23 @@
+version: '2'
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  dors:
+    image: jwilder/whoami
+    environment:
+      - VIRTUAL_HOST=ng.devopsrockstars.com
+  
+  ds:
+    image: jwilder/whoami
+    environment:
+      - VIRTUAL_HOST=ng.dansullivan.io
+  
+  ds-wiki:
+    image: jwilder/whoami
+    environment:
+      - VIRTUAL_HOST=ng-wiki.dansullivan.io
