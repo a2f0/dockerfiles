@@ -40,6 +40,10 @@ Drop to a shell on an already running docker container
 
     docker exec -it b87d583f31e2 bash
 
+Drop to a shell on an image
+
+    docker run -it ruby:2.3.0 /bin/bash
+
 Forward a port (or multiple)
 
     docker run -p 80:80 -it ubuntu-base
