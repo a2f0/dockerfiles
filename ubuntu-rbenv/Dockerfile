@@ -2,12 +2,9 @@ FROM ubuntu-base
 
 LABEL maintainer="Dan Sullivan (dansullivan@gmail.com)"
 
-RUN apt-get install -y apache2
-
 # Install packages for building ruby
 RUN apt-get update
-RUN apt-get install -y build-essential curl git
-RUN apt-get install -y zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y build-essential curl git zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev
 RUN apt-get clean
 
 # Install rbenv and ruby-build

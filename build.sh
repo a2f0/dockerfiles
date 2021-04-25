@@ -1,10 +1,12 @@
 #!/bin/bash
 
+set -e
+
 images=(
   amazonlinux
   raspbian
+  ubuntu-base # needs to be buit first
   ubuntu-apache
-  ubuntu-base
   ubuntu-rbenv
 )
 

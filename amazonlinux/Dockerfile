@@ -10,8 +10,7 @@ RUN yum install procps -y
 RUN yum install sudo  -y
 RUN yum install which  -y
 RUN chkconfig sshd on
-RUN service sshd start
-RUN adduser ec2-user
+RUN systemctl enable sshd 
 RUN mkdir -p /home/ec2-user/.ssh
 RUN chmod 700 /home/ec2-user/.ssh
 COPY id_rsa.pub /home/ec2-user/.ssh/authorized_keys
