@@ -1,2 +1,1 @@
 amazonlinux/id_rsa.pub
-ubuntu-dokuwiki/init-env.sh

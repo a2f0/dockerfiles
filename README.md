@@ -2,13 +2,13 @@
 
 Dockerfiles for building things.
 
-# Usage
+## Usage
 
-Run `./build_me.sh` to build the images.
+Run `./build.sh` to build the images.
 
-# Docker Notes
+## Notes
 
-## Working with Volumes
+### Working with Volumes
 
 List the volumes
 
@@ -30,7 +30,7 @@ Show what containers are using a volume
 
     docker ps --filter=volume=ccsbackend_postgres_data_dev
 
-##  Misc
+### Misc
 
 Start a detached container with an environment variable set
 
@@ -91,7 +91,7 @@ Detach an attached container
 
     cntrl+p, cntrl+q
 
-# AWS ECS / Docker Compose
+## AWS ECS / Docker Compose
 
 Delete the cluster and associated resources
 
