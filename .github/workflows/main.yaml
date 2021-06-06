@@ -17,3 +17,5 @@ jobs:
       with:
         python-version: '3.8'
         architecture: 'x64'
+    - name: Build containers
+      run: ./build.sh
