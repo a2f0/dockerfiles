@@ -1,1 +1,0 @@
-amazonlinux/id_rsa.pub
